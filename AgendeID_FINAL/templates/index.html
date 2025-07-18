@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendeID - Atendimento Virtual</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div id="sidebar-content">
+            </div>
+        </aside>
+        
+        <main class="chat-container">
+            <div class="chat-header">
+                <h1>AgendeID - Assistente Virtual</h1>
+                <div class="status-connection" id="status-connection">🟢 Conectado</div>
+            </div>
+            
+            <div class="chat-box" id="chat-box">
+            </div>
+            
+            <form id="chat-form" class="chat-form">
+                <input 
+                    type="text" 
+                    id="chat-input" 
+                    placeholder="Digite sua mensagem..." 
+                    autocomplete="off" 
+                    required
+                    maxlength="500"
+                />
+                <button type="submit" id="send-button">
+                    <span id="send-text">Enviar</span>
+                    <span id="loading-spinner" style="display: none;">⏳</span>
+                </button>
+            </form>
+        
+    <script src="/static/script.js"></script>
+</body>
+</html>

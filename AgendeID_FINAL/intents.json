@@ -1,0 +1,481 @@
+{
+    "intents": [
+        {
+        "tag": "iniciar_agendamento",
+        "patterns": [
+            "agendar atendimento",
+            "quero agendar",
+            "marcar horário",
+            "preciso de um atendimento",
+            "agendamento"
+        ],
+        "responses": ["Claro! Vamos iniciar o seu agendamento."]
+        },
+        {
+        "tag": "cancelar_agendamento",
+        "patterns": [
+            "cancelar agendamento",
+            "quero cancelar",
+            "desmarcar",
+            "desmarcar atendimento",
+            "anular agendamento",
+            "revogar agendamento"
+        ],
+        "responses": [
+            "Certo, vamos cancelar seu agendamento. Por favor, digite o ID do agendamento que deseja cancelar:"
+        ]
+        },
+        {
+        "tag": "alterar_agendamento",
+        "patterns": [
+            "alterar agendamento",
+            "remarcar horário",
+            "mudar data",
+            "trocar o agendamento",
+            "reagendar",
+            "editar meu atendimento"
+        ],
+        "responses": [
+            "Vamos alterar seu agendamento. Por favor, digite o ID do agendamento que deseja modificar:"
+        ]
+        },
+        {
+        "tag": "meus_agendamentos",
+        "patterns": [
+            "quero ver meus agendamentos",
+            "meus atendimentos",
+            "quais são meus agendamentos",
+            "minhas consultas",
+            "meus agendamentos",
+            "o que eu agendei",
+            "listar meus agendamentos",
+            "ver meus agendamentos"
+        ],
+        "responses": ["Aqui estão seus agendamentos:"]
+        },
+        {
+        "tag": "cadastro_inicio",
+        "patterns": [
+            "quero me cadastrar",
+            "fazer cadastro",
+            "criar conta",
+            "cadastrar novo usuário",
+            "novo cadastro",
+            "me registrar"
+        ],
+        "responses": ["Vamos começar seu cadastro. Qual é o seu nome completo?"]
+        },
+        {
+        "tag": "login_inicio",
+        "patterns": [
+            "quero fazer login",
+            "entrar no sistema",
+            "acessar conta",
+            "fazer login",
+            "entrar",
+            "login"
+        ],
+        "responses": ["Vamos iniciar o login. Qual é o seu e-mail?"]
+        },
+        {
+        "tag": "logout",
+        "patterns": [
+            "logout",
+            "sair",
+            "quero sair",
+            "encerrar sessão",
+            "deslogar",
+            "desconectar"
+        ],
+        "responses": [
+            "Você foi desconectado com sucesso. Até mais!"
+        ]
+        },
+        {
+        "tag": "saudacao",
+        "patterns": ["oi", "olá", "bom dia", "boa tarde", "boa noite", "hey", "hello"],
+        "responses": ["Olá! Como posso te ajudar?", "Oi! Precisa de alguma informação?"]
+        },
+        {
+            "tag": "documentos_necessarios",
+            "patterns": [
+                "quais documentos preciso levar",
+                "o que eu levo no dia",
+                "documentos necessários para atendimento",
+                "documentos obrigatórios",
+                "o que preciso apresentar",
+                "o que levar",
+                "documentos para rg",
+                "o que é necessário"
+            ],
+            "responses": [
+                "Para emissão da identidade você deve levar:\n Certidão de nascimento ou casamento (original)\n🆔 CPF (original ou cópia)\n Comprovante de residência atual\n Não precisa de foto, será tirada no local"
+            ]
+        },
+        {
+            "tag": "horarios_disponiveis",
+            "patterns": [
+                "quais são os horários disponíveis",
+                "que horas posso agendar",
+                "qual o horário de atendimento",
+                "horário de funcionamento",
+                "horários de atendimento",
+                "quando funciona",
+                "horário do posto"
+            ],
+            "responses": [
+                " Horários de atendimento:\n Segunda a Sexta: 8h às 17h\n Sábado: 8h às 12h\n Domingo: Fechado\n\nPara agendar, use: 'Agendar para DD/MM/AAAA às HH:MM'"
+            ]
+        },
+        {
+            "tag": "local_atendimento",
+            "patterns": [
+                "onde é o atendimento",
+                "qual o local",
+                "endereço do posto",
+                "localização",
+                "como chegar",
+                "onde fica",
+                "endereço"
+            ],
+            "responses": [
+                " Local de atendimento:\nPosto de Identificação Civil\nRua das Cidadanias, 123 - Centro\nCidade Ocidental - GO\n\n Transporte público: Linhas 10, 15 e 22\n Estacionamento gratuito disponível"
+            ]
+        },
+        {
+            "tag": "prazo_identidade",
+            "patterns": [
+                "quanto tempo leva para receber a identidade",
+                "prazo para entrega do documento",
+                "quando fica pronta a identidade",
+                "demora quanto tempo",
+                "prazo de entrega",
+                "quando vou receber",
+                "tempo para ficar pronto"
+            ],
+            "responses": [
+                " Prazos de entrega:\nIdentidade comum: até 10 dias úteis\n Identidade expressa: até 5 dias úteis (taxa adicional)\n Você receberá SMS quando estiver pronta para retirada"
+            ]
+        },
+        {
+            "tag": "esqueci_senha",
+            "patterns": [
+                "esqueci minha senha",
+                "como recupero a senha",
+                "recuperar acesso",
+                "não lembro a senha",
+                "perdi a senha",
+                "redefinir senha",
+                "trocar senha"
+            ],
+            "responses": [
+                " Para recuperar sua senha:\n1. Venha ao posto com um documento oficial com foto\n2. Nossos funcionários te ajudarão a redefinir\n3. Ou refaça seu cadastro com o mesmo CPF (sobrescreverá o anterior)"
+            ]
+        },
+        {
+            "tag": "tempo_atendimento",
+            "patterns": [
+                "quanto tempo dura o atendimento",
+                "tempo do processo",
+                "quanto tempo vou ficar lá",
+                "duração do atendimento",
+                "demora quanto tempo no posto",
+                "tempo de atendimento"
+            ],
+            "responses": [
+                " Tempo médio de atendimento:\n Conferência de dados: 10 minutos\n Foto e coleta biométrica: 15 minutos\n Finalização: 5 minutos\n\n⏰ Total: aproximadamente 30 minutos\n(Pode variar conforme demanda do dia)"
+            ]
+        },
+        {
+            "tag": "valor_documento",
+            "patterns": [
+                "quanto custa a identidade",
+                "preciso pagar",
+                "tem algum valor",
+                "é pago",
+                "valor da taxa",
+                "preço da identidade",
+                "taxa do rg"
+            ],
+            "responses": [
+                " Valores (2025):\n Primeira via: GRATUITA\n Segunda via: R$ 32,13\n Alteração de dados: R$ 32,13\n Taxa expressa: +R$ 45,00\n\n Formas de pagamento: PIX, cartão ou dinheiro"
+            ]
+        },
+        {
+            "tag": "problemas_chat",
+            "patterns": [
+                "o chatbot não entende",
+                "erro no atendimento",
+                "não consigo falar com ninguém",
+                "não está funcionando",
+                "bot não funciona",
+                "erro no chat"
+            ],
+            "responses": [
+                " Lamento a dificuldade! \n\n Dicas:\n• Tente frases mais simples\n• Use palavras-chave como 'agendar', 'cancelar'\n• Verifique se está logado\n\n Se persistir, visite o posto presencialmente com documento"
+            ]
+        },
+        {
+            "tag": "como_funciona_processo",
+            "patterns": [
+                "como funciona o processo",
+                "o que acontece no atendimento",
+                "explica o procedimento",
+                "como é feito",
+                "passo a passo",
+                "processo de identidade"
+            ],
+            "responses": [
+                " Processo completo:\n\n1️⃣ Chegada: Confirme presença no chatbot\n2️⃣ Documentos: Apresente os documentos\n3️⃣ Conferência: Validação dos seus dados\n4️⃣ Foto: Captura da foto oficial\n5️⃣ Biometria: Coleta das impressões digitais\n6️⃣ Finalização: Protocolo de acompanhamento\n\n Você receberá SMS quando estiver pronta!"
+            ]
+        },
+        {
+            "tag": "validade_documento",
+            "patterns": [
+                "quanto tempo vale a identidade",
+                "validade do documento",
+                "documento expira",
+                "quando vence",
+                "prazo de validade",
+                "identidade vence"
+            ],
+            "responses": [
+                " Validade da identidade:\n\n 0 a 12 anos: 5 anos\n 12 a 18 anos: 10 anos\n 18 a 60 anos: 10 anos\n Acima de 60 anos: INDETERMINADA\n\n Após vencimento, deve ser renovada"
+            ]
+        },
+                {
+        "tag": "meus_agendamentos",
+        "patterns": [
+            "quero ver meus agendamentos",
+            "meus atendimentos",
+            "quais são meus agendamentos",
+            "minhas consultas",
+            "meus agendamentos",
+            "o que eu agendei",
+            "listar meus agendamentos",
+            "ver meus agendamentos"
+        ],
+        "responses": []
+        },
+        {
+            "tag": "identidade_para_menores",
+            "patterns": [
+                "meu filho pode tirar identidade",
+                "idade mínima para identidade",
+                "criança pode ter documento",
+                "menor de idade",
+                "rg para criança",
+                "identidade de menor"
+            ],
+            "responses": [
+                " IDENTIDADE PARA MENORES:\n\n Qualquer idade pode tirar\n‍‍ Responsável legal deve acompanhar\n Documentos necessários:\n  • Certidão de nascimento\n  • CPF da criança\n  • RG do responsável\n  • Comprovante de residência\n\n🆓 Primeira via é gratuita para menores"
+            ]
+        },
+        {
+            "tag": "problemas_no_login",
+            "patterns": [
+                "não consigo fazer login",
+                "erro no login",
+                "não entra com meu e-mail",
+                "login não funciona",
+                "problema para entrar",
+                "acesso negado"
+            ],
+            "responses": [
+                " Problemas no login:\n\n Verifique:\n• E-mail digitado corretamente\n• Senha correta (case-sensitive)\n• Se já fez cadastro antes\n\n🆘 Soluções:\n• Refaça o cadastro (sobrescreve o anterior)\n• Visite o posto com documento\n\nDigite 'cadastro' para recomeçar"
+            ]
+        },
+        {
+            "tag": "ajuda",
+            "patterns": [
+                "ajuda",
+                "help",
+                "socorro",
+                "não sei o que fazer",
+                "como usar",
+                "orientação",
+                "menu",
+                "opções",
+                "comandos"
+            ],
+            "responses": [
+                " MENU DE AJUDA:\n\n CONTA:\n• 'cadastro' - Criar conta\n• 'login' - Entrar no sistema\n\n AGENDAMENTOS:\n• 'agendar' - Marcar horário\n• 'consultar agendamento' - Ver marcações\n• 'cancelar' - Cancelar horário\n• 'alterar' - Mudar horário\n\n DOCUMENTOS:\n• 'solicitar identidade' - Pedir RG\n• 'documentos necessários' - O que levar\n\n INFORMAÇÕES:\n• 'horário' - Funcionamento\n• 'local' - Endereço\n• 'prazo' - Tempo de entrega\n\nO que você precisa?"
+            ]
+        },
+        {
+            "tag": "obrigado",
+            "patterns": [
+                "obrigado",
+                "obrigada",
+                "valeu",
+                "muito obrigado",
+                "agradeço",
+                "brigado",
+                "vlw"
+            ],
+            "responses": [
+                " De nada! Fico feliz em ajudar!",
+                " Por nada! Estou aqui sempre que precisar!",
+                " Foi um prazer ajudar! Mais alguma coisa?"
+            ]
+        },
+        {
+            "tag": "nao_entendi",
+            "patterns": [
+                "não entendi",
+                "como assim",
+                "explica melhor",
+                "não compreendi",
+                "confuso",
+                "não ficou claro"
+            ],
+            "responses": [
+                " Vou explicar de forma mais clara! O que especificamente você gostaria que eu esclarecesse?",
+                " Deixe-me explicar melhor! Sobre qual parte você tem dúvidas?",
+                " Sem problemas! Vou detalhar mais. O que não ficou claro?"
+            ]
+        },
+        {
+            "tag": "funcionario_emergencia",
+            "patterns": [
+                "emergência",
+                "urgência",
+                "problema no sistema",
+                "erro crítico",
+                "sistema parou",
+                "não funciona"
+            ],
+            "responses": [
+                " EMERGÊNCIA DETECTADA!\n\n Contate imediatamente:\n• Suporte técnico: (61) 3333-1234\n• Supervisor: (61) 9999-5678\n• Em caso crítico: acesso manual aos protocolos"
+            ]
+        },
+        {
+            "tag": "funcionario_orientacoes",
+            "patterns": [
+                "como atender cliente",
+                "procedimentos",
+                "protocolo de atendimento",
+                "orientações",
+                "como funciona",
+                "passo a passo funcionário"
+            ],
+            "responses": [
+                " PROTOCOLO DE ATENDIMENTO:\n\n1️⃣ Confirme presença no sistema\n2️⃣ Verifique documentos originais\n3️⃣ Valide dados no sistema\n4️⃣ Capture foto (fundo branco, sem sorriso)\n5️⃣ Colete biometria (polegar direito)\n6️⃣ Finalize protocolo\n7️⃣ Entregue comprovante ao cliente"
+            ]
+        },
+        {
+            "tag": "status_sistema",
+            "patterns": [
+                "status do sistema",
+                "sistema funcionando",
+                "está online",
+                "conexão",
+                "sistema ok",
+                "verificar sistema"
+            ],
+            "responses": [
+                " SISTEMA OPERACIONAL\n\n Banco de dados: Conectado\n Chatbot: Ativo\n Servidor: Online\n Última atualização: Hoje\n\n Desempenho: Normal"
+            ]
+        },
+        {
+            "tag": "tutorial_funcionario",
+            "patterns": [
+                "como usar o sistema",
+                "tutorial",
+                "guia funcionário",
+                "primeiros passos",
+                "como começar",
+                "manual do funcionário",
+                "funcionário orientações",
+                "orientações funcionário",
+                "sou funcionário e quero ajuda",
+                "orientações",
+                "ajuda funcionário"
+            ],
+            "responses": [
+                " TUTORIAL FUNCIONÁRIO:\n\n COMANDOS PRINCIPAIS:\n• 'agenda' - Ver atendimentos do dia\n• 'confirmar presença' - Marcar chegada\n• 'buscar cliente' - Localizar por CPF/email\n• 'relatório' - Gerar estatísticas\n• 'histórico' - Ver atendimentos passados\n\n Digite 'orientações' para procedimentos detalhados"
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "tchau",
+                "até mais",
+                "flw",
+                "até logo",
+                "bye",
+                "adeus",
+                "até a próxima"
+            ],
+            "responses": [
+                " Até logo! Tenha um ótimo dia!",
+                " Tchau! Volte sempre que precisar!",
+                "‍️ Até mais! Foi um prazer ajudar!"
+            ]
+        },
+        {
+            "tag": "elogio",
+            "patterns": [
+                "muito bom",
+                "excelente",
+                "parabéns",
+                "ótimo atendimento",
+                "gostei",
+                "muito útil",
+                "funciona bem"
+            ],
+            "responses": [
+                " Muito obrigado! Fico feliz que tenha gostado!",
+                " Que bom que foi útil! Estamos sempre melhorando!",
+                " Obrigado pelo feedback positivo! Isso me motiva!"
+            ]
+        },
+        {
+            "tag": "reclamacao",
+            "patterns": [
+                "não gostei",
+                "péssimo",
+                "ruim",
+                "não funciona",
+                "problema",
+                "reclamação",
+                "insatisfeito"
+            ],
+            "responses": [
+                " Lamento que não tenha sido uma boa experiência. Como posso melhorar e te ajudar?",
+                " Sua opinião é importante! O que posso fazer para resolver?",
+                " Obrigado pelo feedback. Vamos trabalhar para melhorar!"
+            ]
+        }
+        , {
+            "tag": "confirmar_presenca",
+            "patterns": ["confirmar 4", "confirmar j@gmail.com", "confirmar presença", "confirmar agendamento"],
+            "responses": ["Confirmando presença..."]
+        },
+        {
+            "tag": "gerar_relatorio",
+            "patterns": ["gerar relatorio", "mostrar relatorio", "relatorio dos atendimentos"],
+            "responses": ["Gerando relatório..."]
+        },
+        {
+            "tag": "buscar_cliente",
+            "patterns": ["buscar cliente j@gmail.com", "buscar cliente 12345678900", "cliente por cpf", "buscar dados do cliente"],
+            "responses": ["Buscando cliente..."]
+        },
+        {
+        "tag": "agenda_funcionario",
+        "patterns": [
+            "ver agenda",
+            "agenda do dia",
+            "consultar agenda do dia",
+            "ver atendimentos de hoje",
+            "o que tem hoje",
+            "agendamentos de hoje",
+            "ver agenda de hoje"
+        ],
+        "responses": [
+            "Buscando os agendamentos do dia..."
+        ]
+        }
+    ]
+}

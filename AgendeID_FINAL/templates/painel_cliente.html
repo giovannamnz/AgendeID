@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Cliente - AgendeID</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Cliente</h2>
+                <ul>
+                <li><i class="fa-solid fa-calendar-plus"></i> Agendar Atendimento</li>
+                <li><i class="fa-solid fa-clipboard-list"></i> Meus Agendamentos</li>
+                <li><i class="fa-solid fa-pen-to-square"></i> Alterar</li>
+                <li><i class="fa-solid fa-ban"></i> Cancelar</li>
+                <li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+                </ul>
+
+        </aside>
+
+        <main class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <div class="message bot">
+                    <strong>Olá, seja bem-vindo(a) ao Painel do Cliente!</strong><br><br>
+
+                    Utilize o menu lateral ou digite um comando no chat.<br><br>
+
+                    <strong>Comandos disponíveis:</strong><br>
+                    • <code>Agendar atendimento</code><br>
+                    • <code>Consultar agendamento</code><br>
+                    • <code>Alterar agendamento</code><br>
+                    • <code>Cancelar agendamento</code><br>
+                    • <code>Logout</code><br><br>
+
+                    Estou pronto para te ajudar. É só digitar! 😉
+                </div>
+            </div>
+
+            <form id="chat-form" class="chat-form">
+                <input 
+                    type="text" 
+                    id="chat-input" 
+                    placeholder="Digite sua mensagem..." 
+                    autocomplete="off" 
+                    required
+                />
+                <button type="submit" id="send-button">
+                    <span id="send-text">Enviar</span>
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
