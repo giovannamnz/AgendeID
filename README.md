@@ -69,3 +69,14 @@ O sistema foi desenvolvido para rodar localmente, acessado através de um navega
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/agendeid.git
+   
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+
+3. Inicie o servidor local:
+   ```bash
+   python app.py
+
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias e correções.
